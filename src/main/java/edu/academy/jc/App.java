@@ -1,7 +1,23 @@
 package edu.academy.jc;
 
+import edu.academy.jc.hw2.Clock;
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("App");
+        Clock clock = new Clock();
+        clock.setAlarm(15,00);
+        clock.checkAlarm(15,00);
+        clock.checkTimeCount(17,00);
+        System.out.println(clock.setAlarm(15,15));
+        System.out.println(clock.checkAlarm(15,15));
+        System.out.println(clock.checkTimeCount(17,00));
+        System.out.println("//////////");
+        System.out.println( clock.setAlarm(25,00));
+        System.out.println(clock.checkAlarm(15,00));
+        System.out.println(clock.checkTimeCount(20,15));
+        System.out.println("///////////");
+        System.out.println(clock.checkTimeCount(20,15));
+        System.out.println(clock.checkTimeCount(20,30));
+        System.out.println(clock.checkTimeCount(26,00));
     }
 }
